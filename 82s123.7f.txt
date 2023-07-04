@@ -1,0 +1,52 @@
+                            ;************************************************************************************************
+                            ;*  This file contains color information - contains 16 colors                                   *
+                            ;*  reverse engineered code here is wrong                                                       *
+                            ;************************************************************************************************
+                            ;undefined RST0(byte param_1)
+          ;param_1       byte                 A                      
+                            ;the color is calculated as a 8 bit number
+                            ;bit 1,2,3 - red connected to different resistors
+                            ;bit 4,5,6 - green connected to different resistors
+                            ;bit 7,8   - blue connected to two different resistors
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0000    00              NOP                                                 
+ram:ram:0001    07              RLCA                                                
+ram:ram:0002    66              LD          H,(HL)                                  
+ram:ram:0003    ef              RST         RST5                                    
+ram:ram:0004    00              NOP                                                 
+ram:ram:0005    f8              RET         M                                       
+                            OFF_ram_0006:                 ;XREF[0,1]:   Entry Point
+ram:ram:0006    ea6f00          JP          PE,LAB_ram_006f                         
+ram:ram:0009    3f              CCF                                                 
+ram:ram:000a    00              NOP                                                 
+ram:ram:000b    c9              RET                                                 
+ram:ram:000c    38              ??          38h    8                                
+ram:ram:000d    aa              ??          AAh                                     
+ram:ram:000e    af              ??          AFh                                     
+ram:ram:000f    f6              ??          F6h                                     
+                            ;************************************************************************************************
+                            ;*                                           FUNCTION                                           *
+                            ;************************************************************************************************
+                            ;undefined RST2(void)
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0010    00              NOP                                                 
+ram:ram:0011    00              NOP                                                 
+ram:ram:0012    00              NOP                                                 
+ram:ram:0013    00              NOP                                                 
+ram:ram:0014    00              NOP                                                 
+ram:ram:0015    00              NOP                                                 
+ram:ram:0016    00              NOP                                                 
+ram:ram:0017    00              NOP                                                 
+                            ;************************************************************************************************
+                            ;*                                           FUNCTION                                           *
+                            ;************************************************************************************************
+                            ;undefined RST3(void)
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0018    00              NOP                                                 
+ram:ram:0019    00              NOP                                                 
+ram:ram:001a    00              NOP                                                 
+ram:ram:001b    00              NOP                                                 
+ram:ram:001c    00              NOP                                                 
+ram:ram:001d    00              NOP                                                 
+ram:ram:001e    00              NOP                                                 
+ram:ram:001f    00              NOP                                                 
