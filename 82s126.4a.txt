@@ -1,0 +1,280 @@
+                            ;************************************************************************************************
+                            ;*                                     contains 32 palettes                                     *
+                            ;************************************************************************************************
+                            ;undefined RST0(byte param_1)
+          ;param_1       byte                 A                      
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0000    00              NOP                                                 
+ram:ram:0001    00              NOP                                                 
+ram:ram:0002    00              NOP                                                 
+ram:ram:0003    00              NOP                                                 
+ram:ram:0004    00              NOP                                                 ;red ghost palette
+ram:ram:0005    0f              RRCA                                                
+ram:ram:0006    0b              DEC         BC                                      
+                            OFF_ram_0007:                 ;XREF[0,1]:   Entry Point
+ram:ram:0007    010000          LD          BC,0x0                                  
+ram:ram:000a    00              NOP                                                 
+ram:ram:000b    00              NOP                                                 
+ram:ram:000c    00              NOP                                                 ;pink ghost palette
+ram:ram:000d    0f              RRCA                                                
+ram:ram:000e    0b              DEC         BC                                      
+ram:ram:000f    03              INC         BC                                      
+                            ;************************************************************************************************
+                            ;*                                           FUNCTION                                           *
+                            ;************************************************************************************************
+                            ;undefined RST2(byte param_1)
+          ;param_1       byte                 A                      
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0010    00              NOP                                                 
+ram:ram:0011    00              NOP                                                 
+ram:ram:0012    00              NOP                                                 
+ram:ram:0013    00              NOP                                                 
+ram:ram:0014    00              NOP                                                 ;cyan ghost palette
+ram:ram:0015    0f              RRCA                                                
+ram:ram:0016    0b              DEC         BC                                      
+ram:ram:0017    05              DEC         B                                       
+                            ;************************************************************************************************
+                            ;*                                           FUNCTION                                           *
+                            ;************************************************************************************************
+                            ;undefined RST3(byte param_1)
+          ;param_1       byte                 A                      
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0018    00              NOP                                                 
+ram:ram:0019    00              NOP                                                 
+ram:ram:001a    00              NOP                                                 
+ram:ram:001b    00              NOP                                                 
+ram:ram:001c    00              NOP                                                 ;orange ghost palette
+ram:ram:001d    0f              RRCA                                                
+ram:ram:001e    0b              DEC         BC                                      
+ram:ram:001f    07              RLCA                                                
+                            ;************************************************************************************************
+                            ;*                                           FUNCTION                                           *
+                            ;************************************************************************************************
+                            ;undefined RST4(byte param_1)
+          ;param_1       byte                 A                      
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0020    00              NOP                                                 
+ram:ram:0021    00              NOP                                                 
+ram:ram:0022    00              NOP                                                 
+ram:ram:0023    00              NOP                                                 
+ram:ram:0024    00              NOP                                                 
+ram:ram:0025    0b              DEC         BC                                      
+                            OFF_ram_0026:                 ;XREF[0,1]:   Entry Point
+ram:ram:0026    010900          LD          BC,0x9                                  
+ram:ram:0029    00              NOP                                                 
+ram:ram:002a    00              NOP                                                 
+ram:ram:002b    00              NOP                                                 
+ram:ram:002c    00              NOP                                                 
+ram:ram:002d    00              NOP                                                 
+ram:ram:002e    00              NOP                                                 
+ram:ram:002f    00              NOP                                                 
+                            ;************************************************************************************************
+                            ;*                                           FUNCTION                                           *
+                            ;************************************************************************************************
+                            ;undefined RST6(byte param_1)
+          ;param_1       byte                 A                      
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0030    00              NOP                                                 
+ram:ram:0031    00              NOP                                                 
+ram:ram:0032    00              NOP                                                 
+ram:ram:0033    00              NOP                                                 
+ram:ram:0034    00              NOP                                                 
+ram:ram:0035    00              NOP                                                 
+ram:ram:0036    00              NOP                                                 
+ram:ram:0037    00              NOP                                                 
+                            ;************************************************************************************************
+                            ;*                                           FUNCTION                                           *
+                            ;************************************************************************************************
+                            ;undefined RST7(byte param_1)
+          ;param_1       byte                 A                      
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0038    00              NOP                                                 
+ram:ram:0039    0f              RRCA                                                
+ram:ram:003a    00              NOP                                                 
+ram:ram:003b    0e00            LD          C,0x0                                   
+ram:ram:003d    010c0f          LD          BC,0xf0c                                
+ram:ram:0040    00              NOP                                                 
+ram:ram:0041    0e00            LD          C,0x0                                   
+ram:ram:0043    0b              DEC         BC                                      
+ram:ram:0044    00              NOP                                                 
+ram:ram:0045    0c              INC         C                                       
+ram:ram:0046    0b              DEC         BC                                      
+ram:ram:0047    0e00            LD          C,0x0                                   
+ram:ram:0049    0c              INC         C                                       
+ram:ram:004a    0f              RRCA                                                
+ram:ram:004b    010000          LD          BC,0x0                                  
+ram:ram:004e    00              NOP                                                 
+ram:ram:004f    00              NOP                                                 
+ram:ram:0050    00              NOP                                                 
+ram:ram:0051    01020f          LD          BC,0xf02                                
+ram:ram:0054    00              NOP                                                 
+ram:ram:0055    07              RLCA                                                
+ram:ram:0056    0c              INC         C                                       
+ram:ram:0057    02              LD          (BC=>DAT_ram_0f03),param_1              
+ram:ram:0058    00              NOP                                                 
+ram:ram:0059    09              ADD         HL,BC                                   
+ram:ram:005a    060f            LD          B,0xf                                   
+ram:ram:005c    00              NOP                                                 
+ram:ram:005d    0d              DEC         C                                       
+ram:ram:005e    0c              INC         C                                       
+ram:ram:005f    0f              RRCA                                                
+ram:ram:0060    00              NOP                                                 
+ram:ram:0061    05              DEC         B                                       
+ram:ram:0062    03              INC         BC                                      
+ram:ram:0063    09              ADD         HL,BC                                   
+ram:ram:0064    00              NOP                                                 
+ram:ram:0065    0f              RRCA                                                
+                            ;************************************************************************************************
+                            ;*                                           FUNCTION                                           *
+                            ;************************************************************************************************
+                            ;undefined NMI_ISR(void)
+                                                          ;XREF[1,0]:   Entry Point
+ram:ram:0066    0b              DEC         BC                                      
+ram:ram:0067    00              NOP                                                 
+ram:ram:0068    00              NOP                                                 
+ram:ram:0069    0e00            LD          C,0x0                                   
+ram:ram:006b    0b              DEC         BC                                      
+ram:ram:006c    00              NOP                                                 
+ram:ram:006d    0e00            LD          C,0x0                                   
+ram:ram:006f    0b              DEC         BC                                      
+ram:ram:0070    00              NOP                                                 
+ram:ram:0071    00              NOP                                                 
+ram:ram:0072    00              NOP                                                 
+ram:ram:0073    00              NOP                                                 
+ram:ram:0074    00              NOP                                                 
+ram:ram:0075    0f              RRCA                                                
+ram:ram:0076    0e01            LD          C,0x1                                   
+ram:ram:0078    00              NOP                                                 
+ram:ram:0079    0f              RRCA                                                
+ram:ram:007a    0b              DEC         BC                                      
+ram:ram:007b    0e00            LD          C,0x0                                   
+ram:ram:007d    0e00            LD          C,0x0                                   
+ram:ram:007f    0f              RRCA                                                
+ram:ram:0080    00              NOP                                                 
+ram:ram:0081    00              NOP                                                 
+ram:ram:0082    00              NOP                                                 
+ram:ram:0083    00              NOP                                                 
+ram:ram:0084    00              NOP                                                 
+ram:ram:0085    00              NOP                                                 
+ram:ram:0086    00              NOP                                                 
+ram:ram:0087    00              NOP                                                 
+ram:ram:0088    00              NOP                                                 
+ram:ram:0089    00              NOP                                                 
+ram:ram:008a    00              NOP                                                 
+ram:ram:008b    00              NOP                                                 
+ram:ram:008c    00              NOP                                                 
+ram:ram:008d    00              NOP                                                 
+ram:ram:008e    00              NOP                                                 
+ram:ram:008f    00              NOP                                                 
+ram:ram:0090    00              NOP                                                 
+ram:ram:0091    00              ??          00h                                     
+ram:ram:0092    00              ??          00h                                     
+ram:ram:0093    00              ??          00h                                     
+ram:ram:0094    00              ??          00h                                     
+ram:ram:0095    00              ??          00h                                     
+ram:ram:0096    00              ??          00h                                     
+ram:ram:0097    00              ??          00h                                     
+ram:ram:0098    00              ??          00h                                     
+ram:ram:0099    00              ??          00h                                     
+ram:ram:009a    00              ??          00h                                     
+ram:ram:009b    00              ??          00h                                     
+ram:ram:009c    00              ??          00h                                     
+ram:ram:009d    00              ??          00h                                     
+ram:ram:009e    00              ??          00h                                     
+ram:ram:009f    00              ??          00h                                     
+ram:ram:00a0    00              ??          00h                                     
+ram:ram:00a1    00              ??          00h                                     
+ram:ram:00a2    00              ??          00h                                     
+ram:ram:00a3    00              ??          00h                                     
+ram:ram:00a4    00              ??          00h                                     
+ram:ram:00a5    00              ??          00h                                     
+ram:ram:00a6    00              ??          00h                                     
+ram:ram:00a7    00              ??          00h                                     
+ram:ram:00a8    00              ??          00h                                     
+ram:ram:00a9    00              ??          00h                                     
+ram:ram:00aa    00              ??          00h                                     
+ram:ram:00ab    00              ??          00h                                     
+ram:ram:00ac    00              ??          00h                                     
+ram:ram:00ad    00              ??          00h                                     
+ram:ram:00ae    00              ??          00h                                     
+ram:ram:00af    00              ??          00h                                     
+ram:ram:00b0    00              ??          00h                                     
+ram:ram:00b1    00              ??          00h                                     
+ram:ram:00b2    00              ??          00h                                     
+ram:ram:00b3    00              ??          00h                                     
+ram:ram:00b4    00              ??          00h                                     
+ram:ram:00b5    00              ??          00h                                     
+ram:ram:00b6    00              ??          00h                                     
+ram:ram:00b7    00              ??          00h                                     
+ram:ram:00b8    00              ??          00h                                     
+ram:ram:00b9    00              ??          00h                                     
+ram:ram:00ba    00              ??          00h                                     
+ram:ram:00bb    00              ??          00h                                     
+ram:ram:00bc    00              ??          00h                                     
+ram:ram:00bd    00              ??          00h                                     
+ram:ram:00be    00              ??          00h                                     
+ram:ram:00bf    00              ??          00h                                     
+ram:ram:00c0    00              ??          00h                                     
+ram:ram:00c1    00              ??          00h                                     
+ram:ram:00c2    00              ??          00h                                     
+ram:ram:00c3    00              ??          00h                                     
+ram:ram:00c4    00              ??          00h                                     
+ram:ram:00c5    00              ??          00h                                     
+ram:ram:00c6    00              ??          00h                                     
+ram:ram:00c7    00              ??          00h                                     
+ram:ram:00c8    00              ??          00h                                     
+ram:ram:00c9    00              ??          00h                                     
+ram:ram:00ca    00              ??          00h                                     
+ram:ram:00cb    00              ??          00h                                     
+ram:ram:00cc    00              ??          00h                                     
+ram:ram:00cd    00              ??          00h                                     
+ram:ram:00ce    00              ??          00h                                     
+ram:ram:00cf    00              ??          00h                                     
+ram:ram:00d0    00              ??          00h                                     
+ram:ram:00d1    00              ??          00h                                     
+ram:ram:00d2    00              ??          00h                                     
+ram:ram:00d3    00              ??          00h                                     
+ram:ram:00d4    00              ??          00h                                     
+ram:ram:00d5    00              ??          00h                                     
+ram:ram:00d6    00              ??          00h                                     
+ram:ram:00d7    00              ??          00h                                     
+ram:ram:00d8    00              ??          00h                                     
+ram:ram:00d9    00              ??          00h                                     
+ram:ram:00da    00              ??          00h                                     
+ram:ram:00db    00              ??          00h                                     
+ram:ram:00dc    00              ??          00h                                     
+ram:ram:00dd    00              ??          00h                                     
+ram:ram:00de    00              ??          00h                                     
+ram:ram:00df    00              ??          00h                                     
+ram:ram:00e0    00              ??          00h                                     
+ram:ram:00e1    00              ??          00h                                     
+ram:ram:00e2    00              ??          00h                                     
+ram:ram:00e3    00              ??          00h                                     
+ram:ram:00e4    00              ??          00h                                     
+ram:ram:00e5    00              ??          00h                                     
+ram:ram:00e6    00              ??          00h                                     
+ram:ram:00e7    00              ??          00h                                     
+ram:ram:00e8    00              ??          00h                                     
+ram:ram:00e9    00              ??          00h                                     
+ram:ram:00ea    00              ??          00h                                     
+ram:ram:00eb    00              ??          00h                                     
+ram:ram:00ec    00              ??          00h                                     
+ram:ram:00ed    00              ??          00h                                     
+ram:ram:00ee    00              ??          00h                                     
+ram:ram:00ef    00              ??          00h                                     
+ram:ram:00f0    00              ??          00h                                     
+ram:ram:00f1    00              ??          00h                                     
+ram:ram:00f2    00              ??          00h                                     
+ram:ram:00f3    00              ??          00h                                     
+ram:ram:00f4    00              ??          00h                                     
+ram:ram:00f5    00              ??          00h                                     
+ram:ram:00f6    00              ??          00h                                     
+ram:ram:00f7    00              ??          00h                                     
+ram:ram:00f8    00              ??          00h                                     
+ram:ram:00f9    00              ??          00h                                     
+ram:ram:00fa    00              ??          00h                                     
+ram:ram:00fb    00              ??          00h                                     
+ram:ram:00fc    00              ??          00h                                     
+ram:ram:00fd    00              ??          00h                                     
+ram:ram:00fe    00              ??          00h                                     
+ram:ram:00ff    00              ??          00h                                     
