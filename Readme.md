@@ -1,10 +1,5 @@
-# CSOC Systems Week 1
+The file for rough plan is - plan.svg and plan.png whichever is better for you!
+The plan is mostly handwritten as I worked out the rough outline of parts and their Implementation
+As development goes on a much better developed and properly written plan will be made.
 
-## Steps to Contribute
-
--   Fork the project to your GitHub account
--   Clone it in your system i.e. Linux/Windows
--   Create a new branch for you to work on
--   When done adding your files, commit your work locally and push it to the origin
--   Make a pull request to the upstream (this repo)
--   Wait for us to merge your PR :man_technologist:
+The Sound System need to be understood more throughly so that proper documentation and its implementation be made
